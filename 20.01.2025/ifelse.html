@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifelse</title>
+</head>
+<body>
+    <script>
+        // 1 ) Leap Year Checker
+        let a=2023;
+        if(a%400==0)
+        {
+            console.log("Task 1 Answer: It is a leap year");
+        }
+        else if(a%100==0 && a%400!==0)
+        {
+            console.log("Task 1 Answer: It is not a leap year");
+        }
+        else if(a%4==0 && a%100!==0)
+        {
+            console.log("Task 1 Answer: It is a leap year");
+        }
+        else{
+            console.log("Task 1 Answer: It is not a leap year");
+        }
+
+        // 2 ) T0 Calculate simple interest :-
+
+        let p=10000;
+        let t=1;
+        if(p<=10000)
+        {   
+            inte=p*10/100;
+            si=inte*t;
+            tot=si+p;
+            console.log("Task 2 interest is 10% your si amount is:",si,"your interest amount is:",inte,"your simple interest+principle is:",tot); 
+        }
+        else if (p>10000 && p<30000)
+        {   
+            inte=p*7/100;
+            si=inte*t;
+            tot=si+p
+            console.log("Task 2 interest is 7% your si amount is:",si,"your interest amount is:",inte,"your simple interest+principle is:",tot);
+        }
+        else if (p>30000 && p<50000)
+        {   
+            inte=p*5/100;
+            si=inte*t;
+            tot=si+p;
+            console.log("Task 2 interest is 5% your si amount is:",si,"your interest amount is:",inte,"your simple interest+principle is:",tot); 
+        }
+        else if(p>50000)
+        {       
+            inte=p*3/100;
+            si=inte*t;
+            tot=si+p;  
+            console.log("Task 2 interest is 3% your si amount is:",si,"your interest amount is:",inte,"your simple interest+principle is:",tot);       
+        }
+        else {
+            console.log("Task 2 not a number");
+            
+        }
+
+        // 3 ) Odd or Even with Range Checking
+        b=5;
+        if(b<1 && b>100)
+        {
+            console.log("Task 3 Outside range");
+        }
+        else if(b%2==0){
+                console.log("Task 3 Even number");
+                
+        }
+        else {
+            console.log("Task 3 b=5 Odd number");  
+        }
+        // 4 )  Number Category
+        let c=-2;
+        if(c>100 && c>0)
+        {
+            console.log("Task 4 Positive and greater than 100");
+            
+        }
+        else if(c<=100 && c>0)
+        {
+            console.log('Task 4 Positive and less than or equal to 100');
+            
+        }
+        else if(c==0)
+        {
+            console.log("Task 4 zero");
+            
+        }
+        else if(c<0)
+        {
+            console.log("Task 4 negative");
+        }
+        else{
+            console.log("Task 4 invalid");  
+        }
+
+        // 5 ) Discount Calculator
+
+        let d=6000;
+        if(d>5000)
+        {
+            discount=d*0.20;
+            tot=d-discount;
+            console.log("Task 5 20% discount for your purchase:",tot);
+        }
+        else if(d>=2000 && d<=5000)
+        {
+            discount=d*0.10;
+            tot=d-discount;
+            console.log("Task 5 10% discount for your purchase:",tot);
+            
+        }
+        else if(d<2000){
+            console.log("Task 5 No discount");   
+        }
+        else{
+            console.log("Task 5 invalid");
+        }
+        // 6 ) Check Even or Odd
+       let e=6;
+        if(e%2==0){
+                console.log("Task 6  e=6 Even number");
+                
+        }
+        else {
+            console.log("Task 6  Odd number");  
+        }
+
+        // 7 ) User Authentication 
+
+        let userrole="editor"
+        if(userrole==="admin")
+        {
+            console.log("Task 7 Access anything");
+            
+        }
+        else if(userrole==="editor")
+        {
+            console.log("Task 7 Access edit anything");
+            
+        }
+        else if(userrole==="viewer")
+        {
+            console.log("Task 7 Access view only");
+        }
+        else 
+        {
+            console.log("Task 7 invalid User");
+            
+        }
+
+        // 8 ) Product Stock Management 
+        let Stock=0;
+        if (Stock>=100)
+        {
+            console.log("Task 8 Plenty available");
+            
+        }
+        else if(Stock<100 && Stock>=1)
+        {
+            console.log("Task 8 limited Stock available");  
+        }
+        else if(Stock<=1)
+        {
+            console.log("Task 8 No stock Available");
+            
+        }
+        else{
+            console.log("Task 8 invalid");
+            
+        }
+
+
+        // 9 ) Electricity Bill
+
+        let unit=500;
+        if(unit<=100 && unit>=1)
+        {
+            console.log("Task 9 Your unit is below 100 unit so your bill_tax is 1.50 paise");
+            bill= unit*1.5;
+            console.log("Your Electricity bill:",bill); 
+        }
+        else if(unit>=101 && unit<=300)
+        {   
+            console.log("Task 9 Your unit is below 300 unit so your bill_tax is 2.50 paise");
+            bill=(100*1.50)+(unit-100)*2.50;
+            console.log("Your Electricity bill:",bill);
+        }
+        else if(unit>300)
+        {
+            console.log("Task 9 Your unit is above 300 unit so your bill_tax is 3.50 paise");
+            bill=(100*1.50)+(200*2.50)+(unit-300)*3.50;
+            console.log("Your Electricity bill:",bill);
+        }
+        else{
+            console.log("Invalid");
+        }
+        
+
+        // 10 ) divisible by 2 , 3 or both
+        let divi=6;
+        if(divi%2==0 && divi%3==0)
+        {
+            console.log("Task 10 divisibile by 2 and 3");
+            
+        }
+        else{
+            console.log("Task 10 not divisible by both 2 and 3");
+        }
+        // 11 ) Calculate Tax based on income Bracket
+            let salary=600000;
+            if (salary<=250000 || salary<=300000)
+        {
+            console.log("No tax");
+            
+        }
+        else if(salary>=500000 && salary<=600000)
+        {
+            console.log("Task 11 Your tax percentage is 5% and tax amount of your salary is:",salary*0.05,"Rupees");
+            tax=salary*0.05;
+            total=salary-tax;
+            console.log("Your actual salary is:",total);
+            
+
+        }
+        else if(salary>600000 && salary<=900000)
+        {
+            console.log("Task 11 Your tax percentage is 10% and tax amount of your salary is:",salary*0.10,"Rupees");
+            tax=salary*0.10;
+            total=salary-tax;
+            console.log("Your actual salary is:",total);
+        }
+        else if(salary>900000)
+        {
+            console.log("Task 11 Your tax percentage is 15% and tax amount of your salary is:",salary*0.15,"Rupees");
+            tax=salary*0.15;
+            total=salary-tax;
+            console.log("Your actual salary is:",total);
+        }
+        else{
+            console.log("Task 11 invalid"); 
+        }
+         //  12 )Simple Calculator
+
+         let x=50;
+         let y=100;
+         chose="multiply";
+         if (chose==="add")
+         {
+            console.log("Task 12 add x+y x=50 and y=100",x+y);
+            
+         }
+        else if (chose==="sub")
+         {
+            console.log("Task 12 sub x-y x=50 and y=100",x-y);
+         }
+         else if (chose==="multiply")
+         {
+            console.log("Task 12 multiply x*y x=50 and y=100 ",x*y);
+         }
+         else if (chose==="division")
+         {
+            console.log("Task 12 division x/y x=50 and y=100",x/y);
+         }
+         else{
+            console.log("Task 12 invalid command");
+            
+         }
+
+        // 13 )Number Comparison
+
+        let firstnum=5;
+        let secondnum=8;
+         if(firstnum===secondnum)
+         {
+            console.log("Task 13 they are equal");
+            
+         }
+         else if(firstnum>secondnum || secondnum>firstnum)
+         {
+            console.log("Task 13 firstnum=5 and secondnum=8 one is greater than another");
+         }
+         else{
+            console.log("Task 13 invalid");
+            
+         }
+       
+
+
+        // 14 )Traffic Light Simulator
+        let colour="yellow";
+        if(colour=="red")
+        {
+            console.log("Task 14 stop");
+            
+        }
+        else if(colour=="yellow")
+        {
+            console.log("Task 14 get ready");
+            
+        }
+        else if(colour=="Task 14 green")
+        {
+            console.log("Task 14 Go");
+            
+        }
+        else{
+            console.log("Task 14 Unknown command");
+            
+        }
+
+        // 15 ) Shape Identifier
+        let side=5;
+        if(side==3)
+        {
+            console.log("Task 15 triangle");
+            
+        }
+        else if(side==4)
+        {
+            console.log("Task 15 Quadrilateral");
+            
+        }
+        else if(side==5)
+        {
+            console.log("Task 15 Pentagon");
+            
+        }
+        else{
+            console.log("Task 15 Unknown Shape"); 
+        }
+    </script>
+</body>
+</html>
