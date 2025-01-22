@@ -275,7 +275,8 @@ if(totals>=400 && totals<=500)
         
     }
 }
-else if(totals>=300 && totals<=400){
+else if(totals>=300 && totals<=400)
+    {
     if(sub1/100*100>=35 && sub2/100*100>=35 && sub3/100*100>=35 && sub4/100*100>=35 && sub5/100*100>=35)
         {
             console.log("Passed in all subject and your percentage is:",totals/500*100,"Total marks:",totals);
