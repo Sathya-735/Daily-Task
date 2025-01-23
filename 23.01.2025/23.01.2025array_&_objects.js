@@ -16,12 +16,22 @@ for(r=2;r>=0;r--)
 
 // Task 3: Find the maximum number in an array
 
-let max=[50,60,70,80];
 
-for(mx=0;mx<4;mx++)
-{
-    if(mx!==mx++)
-    {
+// Task 6: Count digits in a number
 
-    }      
-}
+let digit=[50,60,70,80];
+
+    console.log("Task 3:",digit.length);
+
+    // Task 7: Sum of digits in a number
+
+// let sum=[5,10,11,12];
+// let add=0;
+// for(s=0;s<4;s++)
+// {   
+//     add=sum[s];
+      
+// }
+// console.log(sum[s]);
+
+
