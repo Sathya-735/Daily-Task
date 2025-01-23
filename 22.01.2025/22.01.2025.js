@@ -156,16 +156,17 @@ while(pw>0)
 
 for(prime=2;prime<101;prime++)
 {
-    if(prime==2 || prime==3)
+    if(prime==2 || prime==3 || prime==5)
     {
-        console.log("Task 9",prime);
+        console.log("Task 9 Prime number:",prime);
     }
     else if(prime%2!==0 && prime%3!==0 && prime%5!==0)
-    {
-        console.log("Task 9",prime);
-        
+    {   
+        console.log("Task 9 Prime number:",prime);
     }
+    
 }
+
 
 let pr=2;
 while(pr<101)
