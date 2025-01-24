@@ -16,23 +16,34 @@ for(r=2;r>=0;r--)
 
 // Task 3: Find the maximum number in an array
 
+let maximum=[5,4,3,2,1,90]
+console.log("Shortcut",Math.max(...maximum));
 
-// Task 5: Count the number of vowels in a string
-let vowels=["sathiya"];
-let ad1=0;
-let ad2=0;
-let ad3=0;
-let ad4=0;
-let tot=ad1+ad2+ad3+ad4;
-for(v=0;v<6;v++)
+let maxiarray=[10,20,30,40];
+let maxi=maxiarray[0];
+for(mx=1;mx<maxiarray.length;mx++)
 {
-    if(vowels[v]=="s")
+    if(maxiarray[mx]>maxi)
     {
-        ad1+=1;
+        maxi=maxiarray[mx];
     }
-    console.log(ad1);
+}
+console.log("task 3:",maxi);
+
+// Task 4: Find the minimum number in an array
+
+let minarray=[10,20,30,40];
+let mini=minarray[0];
+for(mn=1;mn<minarray.length;mn++)
+{
+    if(minarray[mn]<mini)
+    {
+        mini=minarray[mn];
+    }
 }
 
+
+console.log("task 3:",mini);
 
 // Task 6: Count digits in a number
 
