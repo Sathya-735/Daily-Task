@@ -54,8 +54,67 @@ Even_or_odd(15)
 
 
 // Task 3: Write a Function to Find the Maximum of Two Number
+let max_a=50;
+let max_b=100;
+function find_maxi()
+{
+    if(max_a>max_b)
+    {
+        console.log("Task 3:Traditional Greater Value is:",max_a); 
+    }
+    else{
+        console.log("Task 3:Traditional Greater Value is:",max_b); 
+    }
+}
+find_maxi()
+
+let maxi_a=900;
+let maxi_b=800;
+const fnd_maxi=()=>
+{
+    if(maxi_a>maxi_b)
+    {
+        console.log("Task 3:Arrow Function: Greater Value is:",maxi_a); 
+    }
+    else
+    {
+        console.log("Task 3:Arrow Function: Greater Value is:",maxi_b);
+    }
+}
+fnd_maxi()
+
 
 // Task 4: Write a Function to Find the Maximum of Two Number
+let mini_a=150;
+let mini_b=100;
+function find_mini()
+{
+    if(mini_a<mini_b)
+    {
+        console.log("Task 4:Traditional Minimum Value is:",mini_a); 
+    }
+    else{
+        console.log("Task 4:Traditional Minimum Value is:",mini_b); 
+    }
+}
+find_mini()
+
+let min_a=300;
+let min_b=800;
+const fnd_min=()=>
+{
+    if(min_a<min_b)
+    {
+        console.log("Task 4:Arrow Function: Minimum Value is:",min_a); 
+    }
+    else
+    {
+        console.log("Task 4:Arrow Function: Minimum Value is:",min_b);
+    }
+}
+fnd_min()
+
+
 
 
 // Task 5 : Write a Function to Concatenate Strings
@@ -65,7 +124,7 @@ let ln="S"
 
 function concat()
 {
-    console.log("Task 3:Traditional:",fn+ln);
+    console.log("Task 5:Traditional:",fn+ln);
 }
 concat()
 
@@ -75,7 +134,7 @@ let plus="";
 
 const concate=(lan,plus,fin)=>
 {
-    console.log("Task 3:Arrow Function:",fin+plus+lan);
+    console.log("Task 5:Arrow Function:",fin+plus+lan);
 }
 concate("Sathya",".","S")
 
@@ -106,7 +165,25 @@ const factorial=(Fact)=>
 factorial(5)
 
 // Task 7: Write a Function to Reverse a String
+strings=["s","a","t"]
+function Rev()
+{
+    for(let re=strings.length-1;re>=0;re--)
+    {   
+        console.log("Task 7:Traditional:",strings[re]);   
+    }    
+}
+Rev()
 
+string=["s","i","v","a"]
+const rev=()=>
+{
+    for(let r=string.length-1;r>=0;r--)
+    {
+        console.log("Task 7:Arrow Function:",string[r]); 
+    }
+}
+rev()
 
 
 
@@ -126,7 +203,22 @@ const alength=()=>
     
 }
 alength()
+// Task 9: Write a Function to Convert Celsius to Fahrenheit
 
+let Celsius=0;
+function Celsius_To_Fahrenheit(Celsius)
+{   
+    let Fahrenheit=(Celsius * 9/5) + 32;
+    console.log("Task :9 Traditional",Fahrenheit);
+}
+Celsius_To_Fahrenheit(1)
+Celsi=0;
+const Celsi_To_Fahren=()=>
+{
+    let Fahren=(Celsius * 9/5) + 32;
+    console.log("Task :9 Arrow Function",Fahren);
+}
+Celsi_To_Fahren()
 
 // Task 10: Write a Function to Filter Even Numbers from an Array
 let arr=[1,2,3,4,5,6,7,8,9,10]
@@ -158,3 +250,7 @@ const Filter_even=()=>
         }
 }
 Filter_even()
+
+
+
+
