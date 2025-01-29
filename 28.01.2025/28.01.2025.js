@@ -51,8 +51,27 @@ findLargest();
 console.log(`Task 4:The three given Value x=${x} y=${y} z=${z} The biggest Value is:`,findLargest());
 
 // 5) Function Using Callback
-
-
+a=10;
+b=7;
+function performOperation(Addition,Subraction,Multiplication)
+{
+        Addition();
+        Subraction();
+        Multiplication();
+}
+function add()
+{   
+    console.log(`Task 5:Add Operation Value a=${a} and b=${b} ${a+b}`);
+}
+function sub()
+{   
+    console.log(`Task 5:Sub Operation Value a=${a} and b=${b}:${a-b}`);  
+}
+function Mul()
+{   
+    console.log(`Task 5:Mul Operation Value a=${a} and b=${b}:${a*b}`);  
+}
+performOperation(add,sub,Mul)
 
 // 6) Function to Calculate the Area of a Circle
 let pi=3.141592653589793;
