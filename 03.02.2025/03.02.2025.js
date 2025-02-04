@@ -33,39 +33,35 @@ console.log("Task 5: Before slice",sli);
 console.log("Task 5: After slice",sli.slice(0,2));
 
 // 6. How can you filter out fruits that do not contain the letter "a" from the fruits array?
-// let fru=["Apple","Mango","Banana","Orange","kiwi"];
+let fru=["Apple","Mango","Banana","Orange","kiwi"];
 
-// let do_not_contain_a=fru.find((v)=>{
-//     return v.length!=="A";
-// })
-// console.log("Task 6:",do_not_contain_a);
+let do_not_contain_a=fru.filter((v)=>{
+    return !v.includes("a");
+})
+console.log("Task 6:",do_not_contain_a);
 
 // 7. How would you iterate over the fruits array and print each fruit using forEach()? 
-
-// let iterate_forEach=fru.forEach((vls)=>{
-//     return vls;
-// })
-// console.log(iterate_forEach);
-
-
-
-
-
+console.log("Task 7:",fru);
+fru.forEach((foffru)=>{
+    console.log("Task 7 forEach method:",foffru); 
+})
 
 // 8. How can you check if every fruit name in the fruits array has more than 3 characters? 
 let frits=["Apple","Mango","Banana","Orange","kiwi","haw"];
 
-let morethan3=frits.map((frtlength)=>{
+let morethan3=frits.filter((frtlength)=>{
     return frtlength.length>3;
 });
 console.log("Task 8:",morethan3);
 
 // 9. How would you find the first fruit in the fruits array that starts with the letter "O"? 
 
+console.log("Task 9:",frits);
 
-
-
-
+let startswitho=frits.filter((stso)=>{
+    return stso.startsWith("O")
+});
+console.log("Task 9:",startswitho);
 
 // 10. How can you join all the elements of the fruits array into a single string separated by commas? 
 
