@@ -46,6 +46,34 @@ let book =
         }
     }
     person.fullName()
+
+    person["fullName"]();
+    
+
+
+    // what is the difference between dot notation and bracket notation in js
+
+    let pers = {
+        "first name": "murugan",
+        secondname:"S",
+        age: 30,
+        blood:"a1+"
+
+      };
+      
+      console.log(pers["first name"]); // Output: murugan
+      console.log(pers["age"]);  // Output: 30
+
+
+             
+
+      let property = "age";
+      let prop="blood"
+      console.log("We can use variable's inside brackets to access and print output but dot notation can't",pers[property]);
+
+      console.log("Main difference of dot and bracket",pers.prop);
+      
+
     
     
     
