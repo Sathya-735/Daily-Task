@@ -144,3 +144,9 @@ const Student = { name: "Alice", grade: "A", age: 21 }
 const Value=Object.values(Student)
 
 console.log("Task 14:",Value);
+
+
+
+
+
+
