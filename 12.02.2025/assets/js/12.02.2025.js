@@ -171,10 +171,28 @@ box.innerHTML=`<h2>${product.product_name}</h2>
 <img src="${product.img}"/>
 <h4 class="pact"> &#8377 ${product.p}</h4>
 <h4 class="porg"> &#8377 ${product.price}</h4>
-<button>Add to cart</button> &nbsp;  <button>Buy now</button>`
+<button class="Addcartbutton" onclick="cartaddfunction()">Add to cart</button> &nbsp;  <button>Buy now</button>`
 parent.append(box)
 }
 )
+let navigationbar=document.querySelector('.navbar')
+let container=document.querySelector('.navlist')
+            let btn=document.querySelector('#navibutton')
+            btn.addEventListener('click',()=>{
+                container.classList.toggle('show')
+                console.log(container); 
+            })
+
+const Addcartbutton=document.querySelectorAll(".Addcartbutton")
+const cart_element=document.querySelector('.cart')
+let cartcount=0 
+function cartaddfunction(){
+    cartcount+=1
+    cart_element.textContent=cartcount
+}
+
+
+
 
 
 

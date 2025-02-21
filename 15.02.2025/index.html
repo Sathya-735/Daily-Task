@@ -9,8 +9,11 @@
             height: 50px;
             width: 50px;
         }
-        .hidden{
+        .myParagraph{
             display: none;
+        }
+        .show{
+            display: block;
         }
     </style>
 </head>
@@ -29,12 +32,20 @@
     <div class="toogle">
     
     </div>
-    <p id="myParagraph">This is a paragraph to toggle visibility.</p>
+    
+    <div class="updatepara">
+        <input type="text" placeholder="Enter Value" id="content">
+        <button id="updatebutton">update-button</button>
+        <p class="mypara"></p>
+    </div>
+
+    <p class="myParagraph">This is a paragraph to toggle visibility.</p>
     <button id="btn">Toggle Visibility</button>
 <h2>hiiii</h2>
     <script src="17.02.2025.js">
 
     </script>
+    
 </body>
 </html>
 

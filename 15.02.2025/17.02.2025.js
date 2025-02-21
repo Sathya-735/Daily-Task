@@ -26,6 +26,25 @@ btn.addEventListener('click',Click_action)
 container.append(btn)
 container.append(box)
 console.log(container);
+// 3. What steps would you take to toggle the visibility of a <p> element by adding and
+// removing a CSS class using JavaScript?
+const listcontainer=document.querySelector('.toodolistbox')
+const bton=document.querySelector('#bton')
+const input=document.querySelector('#name') 
+const listhead=document.querySelector('.listhead')
+
+bton.addEventListener('click',()=>{
+    actionlist=document.createElement('li')
+    const removebutton=document.createElement('button')
+    removebutton.innerText='x'
+    userinput=input.value
+    actionlist.innerText=userinput
+    listhead.append(actionlist)
+    actionlist.append(removebutton)
+    removebutton.addEventListener('click',()=>{
+        removebutton.parentNode.remove()
+    })
+})
 
 // 4. How can you dynamically add a new list item to an unordered list using
 // JavaScript?
@@ -36,6 +55,20 @@ ullist.innerHTML=`<li>hii</li>
 <li>how are you</li>`
 
 container.append(ullist)
+
+ 
+
+// 5. What approach would you use to remove a specific list item from an unordered
+// list when a button next to it is clicked?
+
+let para=document.querySelector('.myParagraph')
+let bn=document.querySelector('#btn')
+function visibility()
+{
+    para.classList.toggle('show')
+}
+bn.addEventListener('click',visibility)
+
 
 // 6.How would you modify the src attribute of an <img> element to display a
 // different image when a button is clicked?
@@ -53,34 +86,27 @@ image_container.append(image)
 function change_image(){
     image.setAttribute('src','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQATSZE5T6d68dwd0kKIho1LH-ffiVtTEkjyA&s')  
 }
-bttn.addEventListener('click',change_image) 
+bttn.addEventListener('click',change_image)
 
-// 5. What approach would you use to remove a specific list item from an unordered
-// list when a button next to it is clicked?
+// 7. How can you update the text content of a <p> element based on user input from a
+// text field when a button is clicked?
 
-// const list_container=document.querySelector('.list_container')
-// const list_and_button=document.createElement('ul')
+const updatepara=document.querySelector('.updatepara')
+const inputbox=document.querySelector('#content')
+const updatebutton=document.querySelector('#updatebutton')
 
-// list_and_button.innerHTML=`<li>first</li>
-// <li>second</li>
-// <li>third</li>
-// <button>x</button>
-// <button>x</button>
-// `
+const mypara=document.querySelector('.mypara')
 
+updatebutton.addEventListener('click',()=>{
+    mypara.innerText=`your input-value is:${inputbox.value}`
 
-// list_container.append(list_and_button)
-// function removeusingbutton(button)
-// {
-   
-          
-// }
-
-// list_and_button.addEventListener('click',removeusingbutton)
+})
 
 
-// 3. What steps would you take to toggle the visibility of a <p> element by adding and
-// removing a CSS class using JavaScript?
+
+
+
+
 
 
 

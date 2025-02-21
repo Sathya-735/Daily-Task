@@ -1,10 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.parent{
-    margin-top: 25px;
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+}
+
+.navlist {
+    display: flex;
+    gap: 100px;
+    margin: 15px;
+}
+
+.navbar>.navlogo>h1 {
+    color: white;
+    font-family: "Sevillana", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    margin: 5px;
+}
+
+.navbar>.navlist>a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+}
+
+.navbar>.navbutton>button {
+    color: white;
+    background-color: black;
+    display: none;
+}
+.navbar>.navbutton>i{
+    color: white;
+    font-size: 25px;
+    margin: 25px;
+}
+.navbar>.navbutton>p{
+    position: absolute;
+    right: 80px;
+    bottom: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+.parent {
+    margin-top: 83px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -12,42 +63,103 @@
     justify-content: center;
     justify-content: space-evenly;
     row-gap: 25px;
+    background-color: bisque;
 }
-.parent>.child{
+
+.parent>.child {
     height: 500px;
     width: 400px;
+    margin-top: 10px;
     text-align: center;
-    background-color:#F2F2F2;  
+    background-color: #F2F2F2;
+    border-radius: 25px;
 }
-.parent>.child>.pact{
+
+.parent>.child>.pact {
     text-decoration-line: line-through;
-    color:red;
+    color: red;
     margin-top: 3px;
     font-size: 18px;
 }
-.parent>.child>.porg{
+
+.parent>.child>.porg {
     color: green;
     font-size: 20px;
 }
-.parent>.child>img{
+
+.parent>.child>img {
     height: 75%;
     width: 75%;
 }
-.parent>.child>button{
- font-size: 16px;
- margin-top: 6px;
- padding: 3px;
+
+.parent>.child>button {
+    font-size: 16px;
+    margin-top: 6px;
+    padding: 3px;
 }
 
-@media  (min-width: 320px) and (max-width: 767px) 
-{
-    *{
+@media (min-width: 320px) and (max-width: 767px) {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    .parent{
-        margin-top: 25px;
+
+    .navbar {
+        position: relative;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+
+    }
+
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        position: absolute;
+        top: 80px;
+        margin: 0 0 0 0;
+        display: none;
+
+    }
+
+    .navbar>.navbutton>button {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 180px;
+        font-size: 35px;
+    }
+
+    .navlist.show {
+        width: 37%;
+        display: flex;
+
+    }
+    .navlist.show a {
+        border: 2px solid salmon;
+        background-color: black;
+    }
+    .navbar>.navbutton>i{
+        position: absolute;
+        top: 5px;
+        right: 36px;
+        font-size: 25px;
+    }
+    .navbar>.navbutton>p{
+        position: absolute;
+        right: 25px;
+        bottom: 22px;
+        color: white;
+        font-size: 28px;
+    }
+
+    .parent {
+        margin-top: 2px;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -56,37 +168,74 @@
         justify-content: space-evenly;
         row-gap: 25px;
     }
-    .parent>.child{
+
+    .parent>.child {
         height: 300px;
         width: 300px;
         text-align: center;
-        background-color:#F2F2F2;  
+        background-color: #F2F2F2;
     }
-    .parent>.child>.pact{
-    
+
+    .parent>.child>.pact {
+
         font-size: 16px;
     }
-    .parent>.child>.porg{
+
+    .parent>.child>.porg {
         font-size: 18px;
     }
-    .parent>.child>img{
+
+    .parent>.child>img {
         height: 58%;
         width: 50%;
     }
-    .parent>.child>button{
+
+    .parent>.child>button {
         font-size: 14px;
     }
-    
+
 }
-@media  (min-width: 768px) and (max-width: 1023px)
-{
-    *{
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    .parent{
-        margin-top: 25px;
+
+    .navbar {
+        position: relative;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+        .navbar>.navlist{
+            display: flex;
+            gap: 20px;
+        }
+    .navbar>.navbutton>button 
+    {
+        display: none;
+    }
+    .navbar>.navbutton>i{
+        position: absolute;
+        top: 5px;
+        right: 36px;
+        font-size: 25px;
+    }
+    .navbar>.navbutton>p{
+        position: absolute;
+        right: 25px;
+        bottom: 22px;
+        font-size: 28px;
+    }
+    
+    
+    .parent {
+        margin-top: 2px;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -95,27 +244,30 @@
         justify-content: space-evenly;
         row-gap: 25px;
     }
-    .parent>.child{
+
+    .parent>.child {
         height: 300px;
         width: 300px;
         text-align: center;
-        background-color:#F2F2F2;  
+        background-color: #F2F2F2;
     }
-    .parent>.child>.pact{
-    
+
+    .parent>.child>.pact {
+
         font-size: 16px;
     }
-    .parent>.child>.porg{
+
+    .parent>.child>.porg {
         font-size: 18px;
     }
-    .parent>.child>img{
+
+    .parent>.child>img {
         height: 58%;
         width: 50%;
     }
-    .parent>.child>button{
+
+    .parent>.child>button {
         font-size: 14px;
     }
-
-
 
 }

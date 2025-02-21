@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toodolistbox{
+    height: 300px;
+    width: 300px;
+   margin: auto;
+   margin-top: 200px;
+}
+input{
+    width: 300px;
+    padding: 8px 12px;
+}
+#bton{
+    padding: 8px 12px;
+    margin-left: 125px;
+}
+.toodolistbox ul{
+    list-style: none;
+    position: relative;
+}
+li{
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+li button{
+    color: red;
+    background-color: yellow;
+    font-size: 25px;
+    width: 25px;  
+}
