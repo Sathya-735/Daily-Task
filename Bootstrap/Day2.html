@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center">Task1</h1>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyBrand</a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 class="text-center">Task2</h1>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyBrand</a>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 class="text-center">Task3</h1>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+     
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption">
+          <h5>First Slide</h5>
+          <p>This is the first slide description.</p>
+        </div>
+      </div>
+  
+     
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption">
+          <h5>Second Slide</h5>
+          <p>This is the second slide description.</p>
+        </div>
+      </div>
+  
+     
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption">
+          <h5>Third Slide</h5>
+          <p>This is the third slide description.</p>
+        </div>
+      </div>
+    </div>
+  
+   
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <h1 class="text-center">Task4</h1>
+  <div class="card mx-auto text-center" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Card Title</h5>
+      <p class="card-text">This is some text inside the card body.</p>
+      <button class="btn btn-primary">Primary Button</button>
+      <button class="btn btn-outline-danger">Danger Button</button>
+    </div>
+  </div>
+  <h1 class="text-center">Task5</h1>
+  <div class="card mx-auto text-center" style="width: 288px;">
+    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product Image">
+    <div class="card-body text-center">
+      <h5 class="card-title">Product Name</h5>
+      <p class="card-text">Price: ₹999</p>
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+  <h1 class="text-center">Task6</h1>
+  <div class="d-flex justify-content-center align-items-center" style="height: 50vh;">
+    <form>
+      <div class="alert alert-success" role="alert">
+        Form submitted!
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button>
+    </form>
+  </div>
+  <h1 class="text-center">Task7</h1>
+  <div class="container text-center my-5">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+      Contact Us
+    </button>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="text-center">Task8</h1>
+  <div class="d-flex justify-content-center align-items-center" style="height: 25vh;">
+    <form>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">
+          I agree to the terms and conditions
+        </label>
+      </div>
+    </form>
+  </div>
+  <h1 class="text-center">Task9</h1>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyApp</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Messages <span class="badge bg-danger">5</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1 class="text-center">Task10</h1>
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What is your return policy?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Our return policy allows you to return items within 30 days of purchase for a full refund or exchange.
+          </div>
+        </div>
+      </div>
+      
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How do I track my order?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can track your order by logging into your account and visiting the "Order History" section.
+          </div>
+        </div>
+      </div>
+      
+     
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What payment methods do you accept?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We accept all major credit cards, PayPal, and digital wallets like Google Pay and Apple Pay.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-shop me-2"></i>ShopEasy
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1 class="text-center">Miniproject1</h1>
+<div id="productCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://via.placeholder.com/1200x400?text=Summer+Sale+Up+to+50%+Off" class="d-block w-100" alt="Banner 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x400?text=New+Arrivals" class="d-block w-100" alt="Banner 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x400?text=Free+Shipping+on+Orders+Over+$50" class="d-block w-100" alt="Banner 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+
+<div class="container mb-5">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row g-4">
+       
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="https://via.placeholder.com/300x200?text=Product+1" class="card-img-top" alt="Product 1">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Wireless Headphones</h5>
+                    <p class="card-text">Premium sound quality with noise cancellation feature. Up to 30 hours battery life.</p>
+                    <div class="mt-auto">
+                        <span class="fw-bold fs-4">$99.99</span>
+                        <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="https://via.placeholder.com/300x200?text=Product+2" class="card-img-top" alt="Product 2">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Smart Watch</h5>
+                    <p class="card-text">Track your fitness, receive notifications, and more with this stylish smartwatch.</p>
+                    <div class="mt-auto">
+                        <span class="fw-bold fs-4">$149.99</span>
+                        <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="https://via.placeholder.com/300x200?text=Product+3" class="card-img-top" alt="Product 3">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Portable Speaker</h5>
+                    <p class="card-text">Waterproof Bluetooth speaker with 20W output and 15-hour playtime.</p>
+                    <div class="mt-auto">
+                        <span class="fw-bold fs-4">$79.99</span>
+                        <a href="#" class="btn btn-primary float-end">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h1 class="text-center">Miniproject2</h1>
+
+ <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Contact Page</a>
+    </div>
+  </nav>
+
+ 
+  <div class="container text-center my-5">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+      Contact Us
+    </button>
+  </div>
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#formAlert" aria-expanded="false" aria-controls="formAlert">
+                Submit
+              </button>
+            </div>
+          </form>
+
+          <div class="collapse mt-3" id="formAlert">
+            <div class="alert alert-success" role="alert">
+              Form submitted successfully!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
